@@ -74,6 +74,7 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
+          <div class="social-links">
           <a href="https://facebook.com/ricky.banuelos" target="_blank">
             <span class="sr-only">Follow Me on Facebook</span>
             <svg xmlns="http://www.w3.org/2000/svg" 
@@ -109,10 +110,12 @@ const menuitems = [
             </svg>
           </a>
         </div>
+        </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
+        <div class="social-links">
         <a href="https://facebook.com/ricky.banuelos" target="_blank">
           <span class="sr-only">Follow Me on Facebook</span>
           <svg xmlns="http://www.w3.org/2000/svg" 
@@ -148,6 +151,23 @@ const menuitems = [
           </svg>
         </a>
       </div>
+      </div>
     </div>
   </header>
+  <style>
+
+  .social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: gray;
+	}
+	.social-links a:hover {
+		color : red;
+	}
+  </style>
 </Container>
